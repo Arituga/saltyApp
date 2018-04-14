@@ -9,3 +9,14 @@ c:\users\gonma\documents\visual studio 2017\Projects\SaltyNutCodersApp\SaltyNutC
 c:\users\gonma\documents\visual studio 2017\Projects\SaltyNutCodersApp\SaltyNutCodersApp\obj\Debug\netcoreapp2.0\SaltyNutCodersApp.AssemblyInfo.cs
 c:\users\gonma\documents\visual studio 2017\Projects\SaltyNutCodersApp\SaltyNutCodersApp\obj\Debug\netcoreapp2.0\SaltyNutCodersApp.dll
 c:\users\gonma\documents\visual studio 2017\Projects\SaltyNutCodersApp\SaltyNutCodersApp\obj\Debug\netcoreapp2.0\SaltyNutCodersApp.pdb
+C:\Github\hackforsweden\saltyApp\SaltyNutCodersApp\bin\Debug\netcoreapp2.0\SaltyNutCodersApp.deps.json
+C:\Github\hackforsweden\saltyApp\SaltyNutCodersApp\bin\Debug\netcoreapp2.0\SaltyNutCodersApp.runtimeconfig.json
+C:\Github\hackforsweden\saltyApp\SaltyNutCodersApp\bin\Debug\netcoreapp2.0\SaltyNutCodersApp.runtimeconfig.dev.json
+C:\Github\hackforsweden\saltyApp\SaltyNutCodersApp\bin\Debug\netcoreapp2.0\SaltyNutCodersApp.dll
+C:\Github\hackforsweden\saltyApp\SaltyNutCodersApp\bin\Debug\netcoreapp2.0\SaltyNutCodersApp.pdb
+C:\Github\hackforsweden\saltyApp\SaltyNutCodersApp\obj\Debug\netcoreapp2.0\SaltyNutCodersApp.csprojResolveAssemblyReference.cache
+C:\Github\hackforsweden\saltyApp\SaltyNutCodersApp\obj\Debug\netcoreapp2.0\SaltyNutCodersApp.csproj.CoreCompileInputs.cache
+C:\Github\hackforsweden\saltyApp\SaltyNutCodersApp\obj\Debug\netcoreapp2.0\SaltyNutCodersApp.AssemblyInfoInputs.cache
+C:\Github\hackforsweden\saltyApp\SaltyNutCodersApp\obj\Debug\netcoreapp2.0\SaltyNutCodersApp.AssemblyInfo.cs
+C:\Github\hackforsweden\saltyApp\SaltyNutCodersApp\obj\Debug\netcoreapp2.0\SaltyNutCodersApp.dll
+C:\Github\hackforsweden\saltyApp\SaltyNutCodersApp\obj\Debug\netcoreapp2.0\SaltyNutCodersApp.pdb

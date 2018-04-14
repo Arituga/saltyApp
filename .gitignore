@@ -1,0 +1,9 @@
+
+*.lock
+*.ide
+*.ide-wal
+*.ide-shm
+*.ide
+
+bin
+obj

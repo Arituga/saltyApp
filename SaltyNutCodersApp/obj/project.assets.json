@@ -7560,7 +7560,7 @@
       ]
     },
     "Remotion.Linq/2.1.1": {
-      "sha512": "0F2TqPHLizxvDFnxrsnxTcbIvFAlRDQRx/Cua5MKHnIGSuZhk611eP6X9cST0uXoI0BqbDcWcIAYGe9aYxRjZA==",
+      "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
       "type": "package",
       "path": "remotion.linq/2.1.1",
       "files": [
@@ -12535,26 +12535,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gonma\\.nuget\\packages\\": {},
+    "C:\\Users\\jesse\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "c:\\users\\gonma\\documents\\visual studio 2017\\Projects\\SaltyNutCodersApp\\SaltyNutCodersApp\\SaltyNutCodersApp.csproj",
+      "projectUniqueName": "C:\\Github\\hackforsweden\\saltyApp\\SaltyNutCodersApp\\SaltyNutCodersApp.csproj",
       "projectName": "SaltyNutCodersApp",
-      "projectPath": "c:\\users\\gonma\\documents\\visual studio 2017\\Projects\\SaltyNutCodersApp\\SaltyNutCodersApp\\SaltyNutCodersApp.csproj",
-      "packagesPath": "C:\\Users\\gonma\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\gonma\\documents\\visual studio 2017\\Projects\\SaltyNutCodersApp\\SaltyNutCodersApp\\obj\\",
+      "projectPath": "C:\\Github\\hackforsweden\\saltyApp\\SaltyNutCodersApp\\SaltyNutCodersApp.csproj",
+      "packagesPath": "C:\\Users\\jesse\\.nuget\\packages\\",
+      "outputPath": "C:\\Github\\hackforsweden\\saltyApp\\SaltyNutCodersApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\gonma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jesse\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12562,8 +12559,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://teamcity.camelonta.se/httpAuth/app/nuget/v1/FeedService.svc/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
@@ -12579,14 +12575,14 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.5"
+            "version": "[2.0.5, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           }
         },
         "imports": [
