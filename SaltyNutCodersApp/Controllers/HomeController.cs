@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SaltyNutCodersApp.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace SaltyNutCodersApp.Controllers
 {
@@ -12,6 +13,13 @@ namespace SaltyNutCodersApp.Controllers
     {
         public IActionResult Index()
         {
+            
+            var cookieOptions = new CookieOptions()
+            {
+                Expires = DateTime.Now.AddDays(365)
+            };
+            var guid = Guid.NewGuid();
+            HttpContext.Response.Cookies.Append("userId", guid.ToString(), cookieOptions);
             return View();
         }
 

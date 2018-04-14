@@ -2,16 +2,21 @@
     <label>I am...</label>
     <div>
         <label>Police</label>
-        <input type="radio" value="Police" />
+        <input type="radio" name="type" value="police" checked/>
     </div>
     <div>
         <label>Firefighter</label>
-        <input type="radio" value="Firefighter" />
+        <input type="radio" name="type" value="fire" />
     </div>
     <div>
         <label>Medic</label>
-        <input type="radio" value="Medic" />
+        <input type="radio" name="type" value="medic" />
     </div>
+    <div>
+        <label>drone</label>
+        <input type="radio" name="type" value="drone" />
+    </div>
+    <button type="submit" class="submit-location">Start tracking location</button>
 
-    <button type="submit" class="submit-location">Start</button>
+    <p class="info">0</p>
 </form> 

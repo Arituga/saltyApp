@@ -1,41 +1,40 @@
 ﻿(function () {
     var db = firebase.database();
-    var coords;
 
-    var setCoordinates = function (position) {
-        coords = position;
-
-    };
-    var getLocation = function () {
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+    var trackLocation = function () {
         if (navigator.geolocation) {
-
-            navigator.geolocation.watchPosition(function (loc) {
-                console.log(loc)
-                firebase.database().ref('locations/123').set({
-                    lat: loc.coords.latitude, lng: loc.coords.longitude, type: "police"
+            var id = readCookie("userId");
+            var type = $('input[name="type"]:checked').val();
+            navigator.geolocation.getCurrentPosition(function (loc) {
+                console.log(loc);
+                $('.info').text('lat: ' + loc.coords.latitude + 'lng: ' + loc.coords.longitude);
+                firebase.database().ref('locations/' + id).set({
+                    lat: loc.coords.latitude, lng: loc.coords.longitude, type: type
                 });
-            });
+            }, function (err) { }, {
+                    enableHighAccuracy: true
+                });
 
         }
     }
 
-    getLocation();
 
     $('.submit-location').on('click', function (e) {
-        e.preventDefault();
-        getLocation();
-        var x = coords;
-        var id = generateId();
-        afterCoords(id, x);
 
+        e.preventDefault();
+        setInterval(trackLocation, 1000);
+        //startTrackingLocation();
 
     });
-
-    var generateId = function guidGenerator() {
-        var S4 = function () {
-            return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
-        };
-        return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
-    }
 
 })();
