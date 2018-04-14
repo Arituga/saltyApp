@@ -1,21 +1,37 @@
-﻿<form>
-    <div>
-        <label>Police</label>
-        <input type="radio" name="type" value="police" checked/>
-    </div>
-    <div>
-        <label>Firefighter</label>
-        <input type="radio" name="type" value="fire" />
-    </div>
-    <div>
-        <label>Medic</label>
-        <input type="radio" name="type" value="medic" />
-    </div>
-    <div>
-        <label>drone</label>
-        <input type="radio" name="type" value="drone" />
-    </div>
-    <button type="submit" class="submit-location">Start tracking location</button>
+﻿<style>
+    body {
+        background: #0e2439;
+    }
+</style>
+<form>
+    <p class="info"></p>
 
-    <p class="info">0</p>
+    @*<select>
+            <option>Logga in som...</option>
+            <option value="police">Polis</option>
+            <option value="fire">Brandman</option>
+            <option value="medic">Ambulans</option>
+            <option value="drone">Drönare</option>
+        </select>*@
+
+    <div class="type-selector">
+        <div>
+            <label>Polis</label>
+            <input type="radio" name="type" value="police" checked />
+        </div>
+        <div>
+            <label>Brandman</label>
+            <input type="radio" name="type" value="fire" />
+        </div>
+        <div>
+            <label>Sjukvårdare</label>
+            <input type="radio" name="type" value="medic" />
+        </div>
+        <div>
+            <label>Drönare</label>
+            <input type="radio" name="type" value="drone" />
+        </div>
+    </div>
+    <button type="submit" class="submit-location">Aktivera spårning</button>
+
 </form> 
